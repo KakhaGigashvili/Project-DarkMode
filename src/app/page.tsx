@@ -3,7 +3,7 @@ import DarkMode from "./components/DarkMode/DarkMode";
 
 export default function Home() {
   return (
-    <div className="flex justify-center mt-[300px]">
+    <div className="flex justify-center">
          <DarkMode />
     </div>
   );

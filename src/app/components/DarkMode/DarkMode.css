@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .switch {
@@ -70,9 +71,27 @@
   .dark-mode{
     background-color: #121212;
     color: #FAFAFA;
+    transition: background-color 1s ease, color 1s ease;
   }
 
   .title{
     margin-bottom: 50px;
     font-size: 50px;
   }
+
+  .moon, .sun{
+    width: 150px;
+    height: 150px;
+  }
+
+  .sun {
+    filter: invert(85%) sepia(100%) saturate(300%) hue-rotate(10deg);
+  }
+
+  .moon{
+    filter: invert(92%) sepia(7%) saturate(300%) hue-rotate(180deg) brightness(85%);  
+    }
+
+    img{
+        display: flex;
+    }

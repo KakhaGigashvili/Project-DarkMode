@@ -21,6 +21,7 @@ export default () => {
 
     return(
     <div className='container'>
+       { theme ? <img src='/moon-solid.svg' className='moon' /> : <img src='/sun-solid.svg' className='sun' /> }
     <h1 className='title'>Hello World</h1>
     <div className='wrapper'>
         <label className="switch">
